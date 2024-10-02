@@ -1,0 +1,57 @@
+#game-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+#top-players {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.player {
+    width: 45%;
+}
+
+.hand {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.top-row, .middle-row, .bottom-row {
+    display: flex;
+    justify-content: center;
+}
+
+.card-slot, .card-input {
+    width: 40px;
+    height: 60px;
+    border: 1px solid #000;
+    margin: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+}
+
+.card-input {
+    text-align: center;
+    font-size: 16px;
+}
+
+#input-cards {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#distribute-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}

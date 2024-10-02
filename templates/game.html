@@ -1,0 +1,69 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div id="game-container">
+    <div id="top-players">
+        <div id="player1" class="player">
+            <div class="hand">
+                <div class="top-row">
+                    <input type="text" class="card-input" maxlength="2">
+                    <input type="text" class="card-input" maxlength="2">
+                    <input type="text" class="card-input" maxlength="2">
+                </div>
+                <div class="middle-row">
+                    <input type="text" class="card-input" maxlength="2">
+                    <input type="text" class="card-input" maxlength="2">
+                    <input type="text" class="card-input" maxlength="2">
+                    <input type="text" class="card-input" maxlength="2">
+                    <input type="text" class="card-input" maxlength="2">
+                </div>
+                <div class="bottom-row">
+                    <input type="text" class="card-input" maxlength="2">
+                    <input type="text" class="card-input" maxlength="2">
+                    <input type="text" class="card-input" maxlength="2">
+                    <input type="text" class="card-input" maxlength="2">
+                    <input type="text" class="card-input" maxlength="2">
+                </div>
+            </div>
+            <div class="player-name">Player 1</div>
+        </div>
+        <div id="player2" class="player">
+            <!-- Аналогичная структура для Player 2 -->
+        </div>
+    </div>
+    <div id="bottom-player">
+        <div id="player3" class="player">
+            <div class="hand">
+                <div class="top-row">
+                    <div class="card-slot"></div>
+                    <div class="card-slot"></div>
+                    <div class="card-slot"></div>
+                </div>
+                <div class="middle-row">
+                    <div class="card-slot"></div>
+                    <div class="card-slot"></div>
+                    <div class="card-slot"></div>
+                    <div class="card-slot"></div>
+                    <div class="card-slot"></div>
+                </div>
+                <div class="bottom-row">
+                    <div class="card-slot"></div>
+                    <div class="card-slot"></div>
+                    <div class="card-slot"></div>
+                    <div class="card-slot"></div>
+                    <div class="card-slot"></div>
+                </div>
+            </div>
+            <div class="player-name">You</div>
+        </div>
+        <div id="input-cards">
+            <input type="text" class="card-input" maxlength="2">
+            <input type="text" class="card-input" maxlength="2">
+            <input type="text" class="card-input" maxlength="2">
+            <input type="text" class="card-input" maxlength="2">
+            <input type="text" class="card-input" maxlength="2">
+        </div>
+        <button id="distribute-button">Распределить</button>
+    </div>
+</div>
+{% endblock %}
